@@ -305,3 +305,7 @@ ion-icon {
   color: black;
 }
 
+.botao{
+  border: none ;
+  background-color: #FAFAFA;
+}
