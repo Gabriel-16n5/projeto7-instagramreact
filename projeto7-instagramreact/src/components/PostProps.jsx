@@ -1,10 +1,11 @@
+import infoPost from "../data/infoPost";
 function PostProps(props){
     return(
         <div class="post">
         <div class="topo">
           <div class="usuario">
-            <img src="assets/img/meowed.svg" alt="meowed"/>
-            <p>meowed</p>
+            <img src={props.urlUser} alt={props.user}/>
+            <p>{props.user}</p>
           </div>
           <div class="acoes">
             <ion-icon name="ellipsis-horizontal"></ion-icon>
@@ -12,7 +13,7 @@ function PostProps(props){
         </div>
 
         <div class="conteudo">
-          <img src="assets/img/gato-telefone.svg" alt="gato-telefone"/>
+          <img src={props.urlContent} alt={props.altContent}/>
         </div>
 
         <div class="fundo">
@@ -28,12 +29,14 @@ function PostProps(props){
           </div>
 
           <div class="curtidas">
-            <img src="assets/img/respondeai.svg" alt="respondeai"/>
+            <img src={props.urlLike} alt={props.altLike}/>
             <div class="texto">
-              Curtido por <strong>respondeai</strong> e <strong>outras 101.523 pessoas</strong>
+              <p>{props.texto}</p>
             </div>
           </div>
         </div>
       </div>
     )
 }
+
+export default PostProps;
