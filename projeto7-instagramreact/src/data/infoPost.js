@@ -7,7 +7,7 @@ const infoPost = [
         altContent: "dog",
         urlLike: "assets/img/adorable_animals.svg",
         altLike: "adorable_animals",
-        texto: "Curtido por adorable_animals e outras 99.159 pessoas"
+        texto: `Curtido por adorable_animals e outras 99.159 pessoas`
     },
     {
         urlUser: "assets/img/meowed.svg",
@@ -17,17 +17,17 @@ const infoPost = [
         altContent: "gato-telefone",
         urlLike: "assets/img/respondeai.svg",
         altLike: "respondeai",
-        texto: "Curtido por respondeai e outras 101.523 pessoas"
+        texto: `Curtido por respondeai e outras 101.523 pessoas`
     },
     {
-        urlUser: "assets/img/meowed.svg",
-        altUser: "meowed",
-        user: "meowed",
-        urlContent: "assets/img/gato-telefone.svg",
-        altContent: "gato-telefone",
-        urlLike: "assets/img/respondeai.svg",
+        urlUser: "https://www.frazes.com.br/wp-content/uploads/Quando-o-poder-do-amor-se-sobrepuser-ao-amor-pelo-poder-o-mundo-conhecera-a-paz.%F0%9F%99%8F%F0%9F%92%96.jpg",
+        altUser: "Poder Do Amor",
+        user: "Poder Do Amor",
+        urlContent: "https://www.frazes.com.br/wp-content/uploads/Quando-o-poder-do-amor-se-sobrepuser-ao-amor-pelo-poder-o-mundo-conhecera-a-paz.%F0%9F%99%8F%F0%9F%92%96.jpg",
+        altContent: "frase-motivacional",
+        urlLike: "https://conteudo.imguol.com.br/c/entretenimento/2c/2020/12/14/amor-relacionamento-casal-paixao-apaixonados-1607980291163_v2_900x506.jpg.webp",
         altLike: "respondeai",
-        texto: "Curtido por respondeai e outras 101.523 pessoas"
+        texto: `Curtido por AmoAmar e outras 132.432 pessoas`
     }
 ];
 

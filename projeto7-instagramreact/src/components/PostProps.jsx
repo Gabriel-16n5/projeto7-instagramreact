@@ -1,5 +1,12 @@
+import { useState } from "react";
 import infoPost from "../data/infoPost";
 function PostProps(props){
+  const [post, setPost] = useState(false);
+  function postEscolhido(user){setPost(user);}
+
+  const [like, setLike] = useState(false);
+  function LikeEscolhido(user){setPost(user);}
+  
     return(
         <div class="post">
         <div class="topo">
@@ -13,18 +20,18 @@ function PostProps(props){
         </div>
 
         <div class="conteudo">
-          <img src={props.urlContent} alt={props.altContent}/>
+          <button className="botao"onClick={() => setLike(!like)}><img src={props.urlContent} alt={props.altContent}/></button>
         </div>
 
         <div class="fundo">
           <div class="acoes">
             <div>
-              <ion-icon name="heart-outline"></ion-icon>
-              <ion-icon name="chatbubble-outline"></ion-icon>
-              <ion-icon name="paper-plane-outline"></ion-icon>
+              <button className="botao" onClick={() => setLike(!like)}><ion-icon size="large" name={ like ? "heart" : "heart-outline"}  ></ion-icon></button>
+              <ion-icon size="large" name="chatbubble-outline"></ion-icon>
+              <ion-icon size="large" name="paper-plane-outline"></ion-icon>
             </div>
             <div>
-              <ion-icon name="bookmark-outline"></ion-icon>
+              <button className="botao" onClick={() => setPost(!post)}><ion-icon size="large" name={ post ? "bookmark" : "bookmark-outline"}></ion-icon></button> 
             </div>
           </div>
 
