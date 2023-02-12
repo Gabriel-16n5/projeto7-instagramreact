@@ -11,11 +11,11 @@ function SideBar(){
     return(
         <div class="sidebar">
         <div class="usuario">
-          <button className="botao" onClick={alterarImagemDoUsuario}><img src={imagemDoUsuaio} alt="imagem de perfil"/></button>
+          <button data-test="profile-image" className="botao" onClick={alterarImagemDoUsuario}><img src={imagemDoUsuaio} alt="imagem de perfil"/></button>
           <div class="texto">
-            <span>
-              <strong>{nomeDoUsuaio}</strong>
-              <button className="botao" onClick={alterarNomeDoUsuario}><ion-icon name="pencil"></ion-icon></button>
+            <span data-test="name">
+              <strong data-test="name">{nomeDoUsuaio}</strong>
+              <button data-test="edit-name" className="botao" onClick={alterarNomeDoUsuario}><ion-icon name="pencil"></ion-icon></button>
             </span>
           </div>
         </div>

@@ -8,7 +8,7 @@ function PostProps(props){
   function LikeEscolhido(user){setPost(user);}
   
     return(
-        <div class="post">
+        <div data-test="post" class="post">
         <div class="topo">
           <div class="usuario">
             <img src={props.urlUser} alt={props.user}/>
@@ -19,26 +19,26 @@ function PostProps(props){
           </div>
         </div>
 
-        <div class="conteudo">
-          <button className="botao"onClick={() => setLike(!like)}><img src={props.urlContent} alt={props.altContent}/></button>
+        <div data-test="post-image" class="conteudo">
+          <button data-test="post-image" className="botao"onClick={() => setLike(!like)}><img src={props.urlContent} alt={props.altContent}/></button>
         </div>
 
         <div class="fundo">
           <div class="acoes">
             <div>
-              <button className="botao" onClick={() => setLike(!like)}><ion-icon size="large" name={ like ? "heart" : "heart-outline"}  ></ion-icon></button>
+              <button data-test="like-post" className="botao" onClick={() => setLike(!like)}><ion-icon size="large" name={ like ? "heart" : "heart-outline"}  ></ion-icon></button>
               <ion-icon size="large" name="chatbubble-outline"></ion-icon>
               <ion-icon size="large" name="paper-plane-outline"></ion-icon>
             </div>
             <div>
-              <button className="botao" onClick={() => setPost(!post)}><ion-icon size="large" name={ post ? "bookmark" : "bookmark-outline"}></ion-icon></button> 
+              <button data-test="save-post" className="botao" onClick={() => setPost(!post)}><ion-icon size="large" name={ post ? "bookmark" : "bookmark-outline"}></ion-icon></button> 
             </div>
           </div>
 
           <div class="curtidas">
             <img src={props.urlLike} alt={props.altLike}/>
             <div class="texto">
-              <p>{props.texto}</p>
+              <p data-test="likes-number">{props.texto}</p>
             </div>
           </div>
         </div>
