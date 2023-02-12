@@ -19,7 +19,16 @@ const infoPost = [
         altLike: "respondeai",
         texto: "Curtido por respondeai e outras 101.523 pessoas"
     },
-   
+    {
+        urlUser: "assets/img/meowed.svg",
+        altUser: "meowed",
+        user: "meowed",
+        urlContent: "assets/img/gato-telefone.svg",
+        altContent: "gato-telefone",
+        urlLike: "assets/img/respondeai.svg",
+        altLike: "respondeai",
+        texto: "Curtido por respondeai e outras 101.523 pessoas"
+    }
 ];
 
 export default infoPost;
