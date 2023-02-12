@@ -1,9 +1,9 @@
 import { useState } from "react";
 import infoPost from "../data/infoPost";
+import usuario from "./Usuario";
 function PostProps(props){
   const [post, setPost] = useState(false);
   function postEscolhido(user){setPost(user);}
-
   const [like, setLike] = useState(false);
   function LikeEscolhido(user){setPost(user);}
   
