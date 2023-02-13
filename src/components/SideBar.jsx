@@ -25,7 +25,7 @@ function SideBar(){
     return(
         <div class="sidebar">
         <div class="usuario">
-          <button data-test="profile-image" className="botao" onClick={alterarImagemDoUsuario}><img data-test="profile-image" src={imagemDoUsuaio} alt="imagem de perfil"/></button>
+          <button className="botao" onClick={alterarImagemDoUsuario}><img data-test="profile-image" src={imagemDoUsuaio} alt="imagem de perfil"/></button>
           <div class="texto">
             <span data-test="name">
               <strong data-test="name">{nomeDoUsuaio}</strong>
