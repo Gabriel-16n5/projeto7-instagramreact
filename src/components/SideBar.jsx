@@ -40,7 +40,7 @@ function SideBar(){
         </div>
 
         <div class="copyright">
-          © 2021 INSTAGRAM DO FACEBOOK
+          © 2023 INSTAGRAM DO FACEBOOK
         </div>
       </div>
     )
