@@ -17,8 +17,10 @@ function SideBar(){
     let iu = prompt("Passe um link para sua nova foto");
     if(iu === null || iu === undefined || iu === ""){
       iu = "assets/img/catanacomics.svg";
+    } else{
+      setImagemDoUsuario(iu)
+      }
     }
-    setImagemDoUsuario(iu)}
 
     return(
         <div class="sidebar">
