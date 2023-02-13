@@ -311,10 +311,6 @@ ion-icon {
 }
 
 .vermelho{
-  background-color: red;
   color: red;
-}
-
-ion-icon {
-  color: red;
+  font-size: 28px;
 }
