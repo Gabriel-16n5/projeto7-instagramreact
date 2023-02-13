@@ -13,7 +13,12 @@ function SideBar(){
   }
 
   const [imagemDoUsuaio, setImagemDoUsuario] = React.useState("assets/img/catanacomics.svg");
-  function alterarImagemDoUsuario(){setImagemDoUsuario(prompt("Passe um link para sua nova foto"));}
+  function alterarImagemDoUsuario(){
+    let iu = prompt("Passe um link para sua nova foto");
+    if(iu === null || iu === undefined || iu === ""){
+      iu = "assets/img/catanacomics.svg";
+    }
+    setImagemDoUsuario(iu)}
 
     return(
         <div class="sidebar">
