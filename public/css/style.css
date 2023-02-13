@@ -309,3 +309,12 @@ ion-icon {
   border: none ;
   background-color: #FAFAFA;
 }
+
+.vermelho{
+  background-color: red;
+  color: red;
+}
+
+ion-icon {
+  color: red;
+}
