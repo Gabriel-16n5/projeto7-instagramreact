@@ -3,7 +3,14 @@ import React from "react";
 
 function SideBar(){
   const [nomeDoUsuaio, setNomeDoUsuario] = React.useState("catanacomics");
-  function alterarNomeDoUsuario(){setNomeDoUsuario(prompt("Qual seu nome?"));}
+
+  function alterarNomeDoUsuario(){
+    let nu = prompt("Qual seu nome?");
+    if(nu === null || nu === undefined || nu === ""){
+      nu = "catanacomics";
+    }
+    setNomeDoUsuario(nu);
+  }
 
   const [imagemDoUsuaio, setImagemDoUsuario] = React.useState("assets/img/catanacomics.svg");
   function alterarImagemDoUsuario(){setImagemDoUsuario(prompt("Passe um link para sua nova foto"));}
