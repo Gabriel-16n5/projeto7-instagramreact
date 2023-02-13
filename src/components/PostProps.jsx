@@ -7,11 +7,15 @@ function PostProps(props){
   const [like, setLike] = useState(false);
   function LikeEscolhido(user){setPost(user);}
   const [likeClass, setLikeClass] = useState("")
+  const [likeCount, setLikeCount] = useState(props.likeNumber)
   function liker(){
     setLike(!like);
     setLikeClass(!likeClass);
   }
-
+  function likerPost(){
+    setLike("heart");
+    setLikeClass("vermelho");
+  }
 
     return(
         <div data-test="post" class="post">
@@ -26,7 +30,7 @@ function PostProps(props){
         </div>
 
         <div data-test="post-image" class="conteudo">
-          <button data-test="post-image" className="botao"onClick={liker}><img src={props.urlContent} alt={props.altContent}/></button>
+          <button data-test="post-image" className="botao" onClick={likerPost}><img src={props.urlContent} alt={props.altContent}/></button>
         </div>
 
         <div class="fundo">
