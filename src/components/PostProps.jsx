@@ -7,14 +7,24 @@ function PostProps(props){
   const [like, setLike] = useState(false);
   function LikeEscolhido(user){setPost(user);}
   const [likeClass, setLikeClass] = useState("")
-  const [likeCount, setLikeCount] = useState(props.likeNumber)
+  const [likeCount, setLikeCount] = useState(props.nlikes)
   function liker(){
     setLike(!like);
     setLikeClass(!likeClass);
+    if(like !== "heart-outline" && likeClass !== ""){
+      setLikeCount(likeCount - 1);
+     }else {
+       setLikeCount(likeCount + 1);
+     }
   }
   function likerPost(){
     setLike("heart");
     setLikeClass("vermelho");
+    if(like === "heart" && likeClass === "vermelho"){
+      setLikeCount(likeCount - 1);
+    }else {
+      setLikeCount(likeCount + 1);
+    }
   }
 
     return(
@@ -48,7 +58,7 @@ function PostProps(props){
           <div class="curtidas">
             <img src={props.urlLike} alt={props.altLike}/>
             <div class="texto">
-              <p data-test="likes-number">{props.texto}</p>
+              <p data-test="likes-number"> Curtido por {props.texto} e outras {likeCount} pessoas </p>
             </div>
           </div>
         </div>

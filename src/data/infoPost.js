@@ -9,7 +9,8 @@ const infoPost = [
         altContent: "dog",
         urlLike: "assets/img/adorable_animals.svg",
         altLike: "adorable_animals",
-        texto: `Curtido por ${usuario[1].u1} e outras ${usuario[0].p1} pessoas`
+        texto: "adorable_animals",
+        nlikes: 12
     },
     {
         urlUser: "assets/img/meowed.svg",
@@ -19,7 +20,8 @@ const infoPost = [
         altContent: "gato-telefone",
         urlLike: "assets/img/respondeai.svg",
         altLike: "respondeai",
-        texto: `Curtido por ${usuario[1].u2} e outras ${usuario[0].p2} pessoas`
+        texto: "respondeai",
+        nlikes: 24
     },
     {
         urlUser: "https://www.frazes.com.br/wp-content/uploads/Quando-o-poder-do-amor-se-sobrepuser-ao-amor-pelo-poder-o-mundo-conhecera-a-paz.%F0%9F%99%8F%F0%9F%92%96.jpg",
@@ -29,7 +31,8 @@ const infoPost = [
         altContent: "frase-motivacional",
         urlLike: "https://conteudo.imguol.com.br/c/entretenimento/2c/2020/12/14/amor-relacionamento-casal-paixao-apaixonados-1607980291163_v2_900x506.jpg.webp",
         altLike: "respondeai",
-        texto: `Curtido por ${usuario[1].u3} e outras ${usuario[0].p3} pessoas`
+        texto: "Amo Amar",
+        nlikes: 43
     }
 ];
 
