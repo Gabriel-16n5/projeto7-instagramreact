@@ -12,16 +12,15 @@ function PostProps(props){
     setLike(!like);
     setLikeClass(!likeClass);
     if(like !== "heart-outline" && likeClass !== "preto"){
-      setLikeCount(likeCount - 1);
+      setLikeCount(likeCount + 1);
      }else {
-       setLikeCount(likeCount + 1);
+       setLikeCount(likeCount - 1);
      }
   }
   function likerPost(){
     setLike("heart");
     setLikeClass("vermelho");
     if(like === "heart" && likeClass === "vermelho"){
-      setLikeCount(likeCount - 1);
     }else {
       setLikeCount(likeCount + 1);
     }
