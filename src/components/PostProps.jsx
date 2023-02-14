@@ -11,7 +11,7 @@ function PostProps(props){
   function liker(){
     setLike(!like);
     setLikeClass(!likeClass);
-    if(like !== "heart-outline" && likeClass !== ""){
+    if(like !== "heart-outline" && likeClass !== "preto"){
       setLikeCount(likeCount - 1);
      }else {
        setLikeCount(likeCount + 1);
@@ -46,7 +46,7 @@ function PostProps(props){
         <div class="fundo">
           <div class="acoes">
             <div>
-              <button data-test="like-post" className="botao" onClick={liker}><ion-icon size="large" name={ like ? "heart" : "heart-outline"} class={likeClass ? "vermelho" : ""} ></ion-icon></button>
+              <button data-test="like-post" className="botao" onClick={liker}><ion-icon size="large" name={ like ? "heart" : "heart-outline"} class={likeClass ? "vermelho" : "preto"} ></ion-icon></button>
               <ion-icon name="chatbubble-outline"></ion-icon>
               <ion-icon name="paper-plane-outline"></ion-icon>
             </div>
